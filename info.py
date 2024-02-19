@@ -6,25 +6,25 @@ id_pattern = re.compile(r'^.\d+$')
 # Bot information
 SESSION = 'LeoMediaSearchBot'
 USER_SESSION = 'User_Bot'
-API_ID = 4639219
-API_HASH = '8aa6ff17490134bf275616030f46e29e'
-BOT_TOKEN = '6031547979:AAF1Xx1Nzm_vCXCY85tYCXwsr93As1kYZaA'
+API_ID = 13413587
+API_HASH = 'fa2829fb6fb89a42f0d3ad78bd4d8cb8'
+BOT_TOKEN = '6493798968:AAFlmOG0I6S9-4zoJZaIOdMpvVF7eS79Ksw'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 # Admins, Channels & Users
-ADMINS = ['@Hitesh0007']
-CHANNELS = [-1001538461400]
+ADMINS = ['1085998540']
+CHANNELS = [-1002038797131]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = []
 auth_channel = environ.get('AUTH_CHANNEL')
-AUTH_CHANNEL = -1001531025479
+AUTH_CHANNEL = -1001398786468
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 
 # MongoDB information
-DATABASE_URI = "mongodb+srv://jns4638:jns4638@cluster0.qyh3o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_URI = "mongodb+srv://wixoh61093:E7LSrvkiaq3X1uCu@cluster0.yjizf0a.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = 'cinee'
 COLLECTION_NAME = 'channel_files'
 
